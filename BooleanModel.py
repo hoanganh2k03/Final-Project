@@ -19,6 +19,9 @@ if " AND " in query:
 elif " OR " in query:
     terms = query.split(" OR ")
     operator = "OR"
+elif " NOT " in query:
+    terms = query.split(" NOT ")
+    operator = "NOT"
 else:
     terms = [query]
 terms = [term.strip() for term in terms]
@@ -55,6 +58,11 @@ else:
         elif operator == "OR":
             # Với OR: Chuỗi kết hợp chỉ cần chứa ít nhất một term
             if any(term in combined_text_lower for term in terms_lower):
+                results.append((doc_id, title))
+        elif operator == "NOT":
+            include_term = terms_lower[0]
+            exclude_term = terms_lower[1]
+            if include_term in combined_text_lower and exclude_term not in combined_text_lower:
                 results.append((doc_id, title))
         else:
             # Trường hợp không có toán tử: Tìm kiếm term duy nhất trong chuỗi kết hợp
