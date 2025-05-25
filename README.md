@@ -152,13 +152,6 @@ Kết quả LSI (Top 10):
 - ID: 24, Tiêu đề: Taekwondo: Hàn Quốc tại Olympic 2024, Độ tương đồng: 0.5688
 Thời gian xử lý: 0.0823 giây
 
-## Tài Liệu Tham Khảo
-1. N. T. James and R. Kannan, "A Survey on Information Retrieval Models, Techniques and Applications," *International Journal of Advanced Research in Computer Science and Software Engineering*, vol. 7, no. 7, pp. 16-19, 1991.
-2. M. M. Miyu, "Efficiency of Boolean Search Strings for Information Retrieval," *American Journal of Engineering Research (AJER)*, vol. 6, no. 11, pp. 216-222, 2017.
-3. V. K. Singh and V. K. Singh, "Vector Space Model: An Information Retrieval System," *International Journal of Advanced Engineering Research and Studies*, vol. 1, pp. 16-19, 1991.
-4. Y. Champelaux, T. Dkaki, and J. Mothe, "Enhancing High Precision by Combining Okapi BM25 with Structural Similarity in an Information Retrieval System," *Proceedings of the 2nd International Conference on the Theory of Information Retrieval (ICTIR)*, Cambridge, UK, Sep. 2009.
-5. S. Deerwester, S. T. Dumais, G. W. Furnas, T. K. Landauer, and R. Harshman, "Indexing by Latent Semantic Analysis," *Journal of the American Society for Information Science*, vol. 41, no. 6, pp. 391-407, 1990.
-
 ## Lưu Ý
 - Đảm bảo thư mục `sports_docs` chứa 100 file `.txt` và bảng `documents` được cập nhật.
 - Kiểm tra thông tin kết nối MySQL (`host`, `user`, `password`) nếu gặp lỗi.
